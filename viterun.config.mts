@@ -75,7 +75,8 @@ function getBaseConfig(options: ViteRunHandleFunctionOptions) {
     },
     plugins: [
       dtsPlugin({
-        rollupTypes: true,
+        rollupTypes: false,
+        clearPureImport: true,
         copyDtsFiles: true,
       }),
       viteRunLogPlugin({
